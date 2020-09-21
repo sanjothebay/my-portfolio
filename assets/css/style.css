@@ -32,9 +32,9 @@ h3 {
  }
 
 main {
-    display: grid;
-    grid-template-columns: 65% 0%;
-    grid-column-gap: 4em;
+    display: flex;
+    justify-content: space-around;
+
     background-color: rgba(223, 223, 223, 0.623);
 }
 
@@ -43,6 +43,7 @@ main {
     margin: 0vw 0vw 3.5vw 3.5vw;
     padding: .75vw 3.5vw 7vw 3.5vw;
     background-color: white;
+    box-shadow: 5px 5px 7px rgba(32, 30, 30, 0.199);
    
 }
 
@@ -94,6 +95,7 @@ header{
     padding: 1vw;
     padding-top: 2vw;
     margin-left: 3vw;
+    box-shadow: 5px 5px 7px rgba(32, 30, 30, 0.199);
 
 }
 
@@ -134,4 +136,10 @@ header{
       padding: 1vw;
       width: 6vw;
       text-align: center;
+  }
+
+  @media screen and (max-width: 700px) {
+    main {
+      flex-direction: column;
+    }
   }
